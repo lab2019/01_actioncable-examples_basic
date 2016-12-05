@@ -6,6 +6,10 @@ A collection of examples showcasing the capabilities of Action Cable.
 
 You must have redis installed and running on the default port:6379 (or configure it in config/redis/cable.yml).
 
+### What/how/why is Redis?
+
+* Redis is an in-memory key-value store known for its flexibility, performance, and wide language support.
+
 ### Installing Redis
 ##### On Ubuntu 16.04
 
@@ -22,6 +26,20 @@ You must have redis installed and running on the default port:6379 (or configure
 * `brew install redis`
 
 ###### Note: You must have Ruby 2.2.2 installed in order to use redis
+
+### Configure Redis
+
+* `sudo vim /etc/redis/redis.conf`
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04#download,-compile,-and-install-redis
+
+### Test
+
+* `$ redis-server`
+* `$ redis-cli`
+
+### How to use
+
+* https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis
 
 ## Starting the servers
 
