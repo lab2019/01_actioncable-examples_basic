@@ -44,8 +44,8 @@ You must have redis installed and running on the default port:6379 (or configure
 ## Starting the servers
 
 1. Run `./bin/setup`
-2. Run `./bin/cable`
-3. Open up a separate terminal and run: `./bin/rails server`
+2. Open up a separate terminal and run: `./bin/rails server`
+3. Run `./bin/cable`
 4. One more terminal to run redis server: `redis-server`
 4. Visit `http://localhost:3000`
 
