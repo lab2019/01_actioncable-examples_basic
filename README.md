@@ -7,6 +7,10 @@ A collection of examples showcasing the capabilities of Action Cable.
 You must have redis installed and running on the default port:6379 (or configure it in config/redis/cable.yml).
 
 ### Installing Redis
+##### On Ubuntu 16.04
+
+* `sudo apt-get install redis-server`
+
 ##### On Linux
 * `wget http://download.redis.io/redis-stable.tar.gz`
 * `tar xvzf redis-stable.tar.gz`
