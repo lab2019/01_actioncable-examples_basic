@@ -3,6 +3,7 @@ module ApplicationCable
     identified_by :current_user
 
     def connect
+      logger.info ">>>>>>>>> #{cookies.signed[:user_id]}"
       self.current_user = find_verified_user
       logger.add_tags 'ActionCable', current_user.name
     end
