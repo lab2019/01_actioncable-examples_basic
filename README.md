@@ -1,3 +1,5 @@
+**Action Cable with Devise**: <https://github.com/lab2019/actioncable-examples>
+
 # Action Cable Examples
 
 A collection of examples showcasing the capabilities of Action Cable.
