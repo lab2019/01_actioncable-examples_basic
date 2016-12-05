@@ -103,6 +103,20 @@ The `ws://cable.example.com` address must point to your Action Cable server(s), 
 must share a cookie namespace with the rest of the application (which may live under http://example.com).
 This ensures that the signed cookie will be correctly sent.
 
+**BU ÇALIŞAN ÖRNEKTE**: `App` (`this.App`) şöyle ilklenmiş,
+
+```js
+# app/assets/javascripts/channels/index.coffee
+#= require cable
+#= require_self
+#= require_tree .
+
+@App = {}
+App.cable = Cable.createConsumer 'ws://localhost:28080'
+```
+
+Bu amaçla sucununun ilgili portu dinleyecek şekilde çalıştırılması gerekiyor: `$ bundle exec puma -p 28080 cable/config.ru`.
+
 That's all you need to establish the connection! But of course, this isn't very useful in
 itself. This just gives you the plumbing. To make stuff happen, you need content. That content
 is defined by declaring channels on the server and allowing the consumer to subscribe to them.
